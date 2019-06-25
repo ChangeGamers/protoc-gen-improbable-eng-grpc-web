@@ -1,0 +1,14 @@
+cc_binary(
+  name = "protoc-gen-improbable-eng-grpc-web",
+  visibility = ["//visibility:public"],
+  srcs = [
+    "generator-options.cc",
+    "generator-options.hh",
+    "generator.cc",
+    "generator.hh",
+    "main.cc",
+  ],
+  deps = [
+    "@com_google_protobuf//:protoc_lib",
+  ],
+)
