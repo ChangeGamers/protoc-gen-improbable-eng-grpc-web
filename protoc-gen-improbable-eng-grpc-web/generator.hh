@@ -13,19 +13,19 @@ public:
   Generator();
   ~Generator() override;
 
-  void Generator::GenerateFileImports
+  void GenerateFileImports
     ( const GeneratorOptions&                  options
     , google::protobuf::io::Printer&           printer
     , const google::protobuf::FileDescriptor*  file
     ) const;
 
-  void Generator::GenerateServiceDefinitions
+  void GenerateServiceDefinitions
     ( const GeneratorOptions&                  options
     , google::protobuf::io::Printer&           printer
     , const google::protobuf::FileDescriptor*  file
     ) const;
 
-  void Generator::GenerateServiceClients
+  void GenerateServiceClients
     ( const GeneratorOptions&                  options
     , google::protobuf::io::Printer&           printer
     , const google::protobuf::FileDescriptor*  file
