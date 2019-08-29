@@ -194,12 +194,14 @@ void Generator::GenerateServiceDefinitions
 
     std::map<std::string, std::string> vars;
     vars["ServiceName"] = service->name();
+    vars["FullServiceName"] = service->full_name();
 
     printer.Print("\n");
     printer.Print(vars, "export class $ServiceName$ {\n");
     printer.Indent();
 
-    printer.Print(vars, "static readonly serviceName = \"$ServiceName$\";\n\n");
+    printer.Print(vars,
+      "static readonly serviceName = \"$FullServiceName$\";\n\n");
 
     for(auto n=0; service->method_count() > n; ++n) {
       auto method = service->method(n);
