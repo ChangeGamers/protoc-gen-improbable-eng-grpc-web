@@ -123,17 +123,17 @@ namespace {
           to_message->name();
   }
 
-  std::string MaybeCrossFileRef
-    ( const GeneratorOptions& options
-    , const FileDescriptor* from_file
-    , const EnumDescriptor* to_enum
-    )
-  {
-    return ModuleAlias(
-      to_enum->file()->name()) +
-        GetNestedMessageName(to_enum->containing_type()) + "." +
-          to_enum->name();
-  }
+  // std::string MaybeCrossFileRef
+  //   ( const GeneratorOptions& options
+  //   , const FileDescriptor* from_file
+  //   , const EnumDescriptor* to_enum
+  //   )
+  // {
+  //   return ModuleAlias(
+  //     to_enum->file()->name()) +
+  //       GetNestedMessageName(to_enum->containing_type()) + "." +
+  //         to_enum->name();
+  // }
 
   // END of stolen methods from the official protoc js_generator
   //////////////////////////////////////////////////////////////////////////////
