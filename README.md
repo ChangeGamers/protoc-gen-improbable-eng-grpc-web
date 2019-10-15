@@ -7,9 +7,9 @@ Protoc plugin for genrating @improbable-eng/grpc-web compatible service definiti
 ```python
 http_archive(
     name = "minga_protoc_gen_improbable_eng_grpc_web",
-    strip_prefix = "protoc-gen-improbable-eng-grpc-web-20c375eb99e5e32524613d5baff91964ada66fc0",
-    urls = ["https://github.com/ChangeGamers/protoc-gen-improbable-eng-grpc-web/archive/20c375eb99e5e32524613d5baff91964ada66fc0.zip"],
-    sha256 = "c941033a41f73988df4535d72330c5f0a593bb48bb4ca445f8168c427e59e5dd",
+    strip_prefix = "protoc-gen-improbable-eng-grpc-web-1e55435c2316955aeb0d92f907e04b7dac269add",
+    urls = ["https://github.com/ChangeGamers/protoc-gen-improbable-eng-grpc-web/archive/1e55435c2316955aeb0d92f907e04b7dac269add.zip"],
+    sha256 = "63966506ba2f953b916047f10651f6f833025168229cc4f30979ef0c942fabb8",
 )
 ```
 
